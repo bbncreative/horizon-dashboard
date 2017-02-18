@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Horizon Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+  <script type="text/javascript" src="scripts/horizon.js"></script>
+</head>
+<body>
+  <div class="background-panel">
+    <nav>
+      <ul id="nav-account">
+        <li>[Sign In Here]</li>
+      </ul>
+      <div id="timeBox">
+        <div id="timeString"></div>
+        <div id="dateString">[Day],[Date][Suffix] [Month] [Year]</div>
+      </div>
+  </div>
+
+  <!--Firebase Scripts-->
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAt5vjonRD3iFVFCuLMTDVICg3evFtjQ9I",
+      authDomain: "horizon-dashboard.firebaseapp.com",
+      databaseURL: "https://horizon-dashboard.firebaseio.com",
+      storageBucket: "horizon-dashboard.appspot.com",
+      messagingSenderId: "434700094656"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!--End Firebase Scripts-->
+</body>
+</html>
